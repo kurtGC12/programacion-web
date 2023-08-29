@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <title>Formulario Registro</title>
+</head>
+<body class="fondo">
+  <header>    
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="principal.html">
+                <img title="Logo" width="264" height="45" alt="Logo" src="imagenes/">
+               </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar" >    
+             <ul class="navbar-nav" >
+                <li class="nav-item">
+                <a class="nav-link" href="principal.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Autos Nuevos</a>
+                <ul class="dropdown-menu">
+                    <li><a title="RAM" href="pagina ram.html" class="dropdown-item ">Ram</a></li>
+                  <li><a title="Chevrolet" href="https://www.rosselot.cl/ram/" class="dropdown-item ">Chevrolet</a></li>
+                  <li><a title="Mitsubishi" href="https://www.rosselot.cl/ram/" class="dropdown-item ">Mitsubishi</a></li>
+                  <li><a title="Ssangyong" href="https://www.rosselot.cl/ram/" class="dropdown-item ">ssangyong</a></li>
+                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="Formulario.html">Flota</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="terminos.html">Terminos y Condiciones</a>
+              </li>  
+              
+              </li>
+             </ul>
+             
+          </div>
+        </div>
+      </nav> 
+  </header>
+  <div class="container-fluid" id="Flota">
+    <h1>FLOTA</h1>
+   <p>Elegir la más adecuada para tu negocio es el camino al éxito. En Mitsubishi te acompañaremos durante toda esta aventura.
+
+    ¡Confía en la experiencia de nuestros asesores!</p> 
+    
+  </div>
+  <form action="#" method="post" id="formulario1">
+   <section class="form-register">
+    <h4 style="text-align: center;">ASEGURA TU COTIZACION</h4>
+    <input class="inputs" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre"  required>
+    <input class="inputs" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido" required>
+    <input class="inputs" type="email" name="correo" id="correo" placeholder="Ingrese su Correo"  required>
+    <input class="inputs" type="text" name="Rut" id="Rut"  placeholder="Rut Ej: 12345678-9" required>
+    <input class="inputs" type="tel" id="_telefono" placeholder="Ingrese su telefono" inputmode="text" required>
+    <select   class="inputs"type="select" id-marca="0" placeholder="Marca"  required >
+      <option id-marca="0" value="0" selected="selected">Seleccione el vehiculo</option>
+      <option  value="1">Chevrolet</option>
+      <option  value="2">Ram</option>
+      <option  value="3">Mitsubishi</option>
+      <option value="4">Ssangyong</option> 
+      </select>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="radio1" name="terminos" checked required>
+      <label class="form-check-label" for="radio1">Estoy de acuerdo con <a href="terminos.html">Terminos y Condiciones</a></label>
+    </div>
+    <input  class="btn btn-primary"style="padding: 12px; margin: 16px 0;" type="submit" value="Cotizar">
+    <input  class="btn btn-danger"style="padding: 12px; margin: 16px 0;" type="reset" value="Limpiar">
+   </section>
+  </form>
+  <div>
+    <h5 style="color: aliceblue;">**Servicio válido para automóviles y camionetas.</h5>
+  </div>
+
+</body>
+</html>
